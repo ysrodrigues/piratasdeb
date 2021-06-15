@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+$brown: #472a12;
+$dark-brown: #2c1a10;
+$gold: #f8af31;
+$red: #aa1916;
+$orange: #df6213;
+
+footer {
+  font-family: 'Varela Round', sans-serif;
+  background-color: $brown;
+  color: white;
+}
+
+.color-gold {
+  color: $gold;
+}
+
+.header-stripe {
+  background-color: $brown;
+}
+
+.footer-stripe {
+  background-color: $dark-brown;
+}

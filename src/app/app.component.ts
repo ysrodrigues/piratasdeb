@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'piratasdeb';
+  title: String = 'piratasdeb';
+
+  public clickMe(): void {
+    console.log('heelo');
+    return;
+  }
 }

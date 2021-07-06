@@ -51,8 +51,23 @@ footer {
   margin-left: 13rem;
 }
 
-.delivery h1 span {
-  color: $gold;
+.delivery h1 text {
+  fill: $white;
+  font-size: 2.5rem;
+}
+
+.delivery h1 #curve {
+  fill: transparent;
+}
+
+.delivery h1 #line {
+  stroke: $orange;
+  stroke-width: 8px;
+  stroke-linecap: round;
+}
+.delivery h1 .gold {
+  fill: $gold;
+  font-size: 4rem;
 }
 
 @media screen and (min-width: 1920px) {

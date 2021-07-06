@@ -9,7 +9,22 @@
 
 <main>
   <section class="delivery uppercase font-bold grid grid-cols-2">
-    <h1>Entrega de <span>Bebidas</span></h1>
+    <h1>
+      <svg viewBox="0 0 500 500">
+        <path
+          id="curve"
+          d="
+            M 100, 150
+            C 200, 110, 350, 110, 400, 200
+          "
+        />
+        <text width="200">
+          <textPath xlink:href="#curve">Entrega de</textPath>
+        </text>
+        <path id="line" d="M 180,165 h 100" />
+        <text x="85" y="250" width="100" class="gold">Bebidas</text>
+      </svg>
+    </h1>
     <p class="text-center">Região da penha e adjacências.</p>
   </section>
 </main>

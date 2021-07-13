@@ -39,7 +39,7 @@ footer {
   font-size: 4.5rem;
   color: $white;
   background-image: url('/assets/images/bg-beer.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 0;
@@ -68,10 +68,4 @@ footer {
 .delivery h1 .gold {
   fill: $gold;
   font-size: 4rem;
-}
-
-@media screen and (min-width: 1920px) {
-  .delivery {
-    padding-bottom: 59.56rem;
-  }
 }

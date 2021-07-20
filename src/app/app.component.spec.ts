@@ -105,7 +105,7 @@ describe('AppComponent', () => {
     })
   })
 
-  it('should display "Lata" inside beer list in main', () => {
+  it('should display "600" inside beer list in main', () => {
     const fixture = TestBed.createComponent(AppComponent)
     const list = fixture.nativeElement.querySelectorAll('main .beer ul li')
 
@@ -114,7 +114,15 @@ describe('AppComponent', () => {
     })
   })
 
-  // TODO(Yuri): Verificar se dentro da beer list tem as imagens da cerveja
+  it('should display image inside beer list in main', () => {
+    const fixture = TestBed.createComponent(AppComponent)
+    const list = fixture.nativeElement.querySelectorAll('main .beer ul li')
+
+    list.forEach((element: HTMLElement) => {
+      const image: Element = element.children.item(0) || new Element()
+      expect(image.tagName).toEqual('IMG')
+    })
+  })
 
   /** Footer Tests */
 
